@@ -1,0 +1,12 @@
+*.log
+*.png
+*.out
+*.sh
+*.pyc
+
+work_dirs/
+weights/
+pretrained/
+configs/generated/
+configs/hrda/
+configs/daformer
