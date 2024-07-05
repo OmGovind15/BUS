@@ -1,7 +1,6 @@
 *.log
 *.png
 *.out
-*.sh
 *.pyc
 
 work_dirs/
