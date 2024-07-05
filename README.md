@@ -7,9 +7,9 @@ Seun-An Choe*, Ah-Hyung Shin*, Keon-Hee Park, Jinwoo Choi<sup>$\dagger$</sup> , 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2405.19899-b31b1b.svg)](https://arxiv.org/abs/2405.19899) 
 
-### How to run
+## How to run
 
-#### Setup Enviorment
+### Setup Enviorment
 
 We used python 3.8.5.
 
@@ -29,9 +29,8 @@ from their [OneDrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xiee
 Download the MobileSAM weights folder provided by [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
 from their [OneDrive](https://drive.google.com/file/d/1dE-YAG-1mFCBmao2rHDp0n-PP4eH7SjE/view?usp=sharing) and only 'mobile_sam.pt' put them in the folder `weights/`.
 
-Futher 
 
-#### Setup Datasets
+### Setup Datasets
 Download the datasets from GTA5, SYNTHIA, Cityscapes
 Download [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/), [SYNTHIA](http://synthia-dataset.net/downloads/) and [Cityscapes](https://www.cityscapes-dataset.com/).
 
@@ -62,12 +61,12 @@ python tools/convert_datasets/cityscapes_13.py data/cityscapes --nproc 8
 The code above is what we used in the GTA5-->Cityscapes scenario when we set the six private classes to the following. 
 "pole", "traffic sign", "person", "rider", "truck" and "train".
 
-#### Training
+### Training
 ```shell
 python run_experiments.py --config configs/mic/gtaHR2csHR_mic_hrda_512.py
 ```
 
-#### Testing
+### Testing
 ```shell
 sh test.sh work_dirs/run_name/
 ```
