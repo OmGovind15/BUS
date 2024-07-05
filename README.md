@@ -70,8 +70,18 @@ python run_experiments.py --config configs/mic/gtaHR2csHR_mic_hrda_512.py
 ```shell
 sh test.sh work_dirs/run_name/
 ```
-Pretrained model for GTA5->Cityscapes can be downloaded at: (Link). The performance of this model is 62.81 based on the H-Score.
+Pretrained model for GTA5->Cityscapes can be downloaded at: [Link](https://drive.google.com/drive/folders/1jTHNYsZ18TkMElxVaheCkRDbdRW95n5R?usp=drive_link). The performance of this model is 62.81 based on the H-Score.
 
-### Acknowledgement
+##Citation
+```bibtex
+@inproceedings{choe2024open,
+  title={Open-Set Domain Adaptation for Semantic Segmentation},
+  author={Choe, Seun-An and Shin, Ah-Hyung and Park, Keon-Hee and Choi, Jinwoo and Park, Gyeong-Moon},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={23943--23953},
+  year={2024}
+}
+```
+## Acknowledgement
 This code is heavily borrowed from [MIC](https://github.com/lhoyer/MIC), [MobileSAM](https://github.com/ChaoningZhang/MobileSAM) and [DACS](https://github.com/vikolss/DACS).
 
